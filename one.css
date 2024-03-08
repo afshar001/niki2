@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: mnfo;
+    src: url(font/Mj_Farsi\ Simple\ Outline_0.woff2) format(woff2);
+}
+@font-face {
+    font-family: iran;
+    src: url(font/Iranian\ Sans.woff2) format(woff2);
+}
+@font-face {
+    font-family: latin;
+    src: url(font/AnyConv.com__AbrahamLincoln.woff2) format(woff2);
+}
+p{
+    font-family: iran;
+    color: whitesmoke;
+    text-shadow: 5px 5px 10px whitesmoke ;
+}
+
+   #p1{
+    text-align: center;
+    margin-top: 40%;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 35px;
+    word-spacing: 9px;
+    }
+    #p2{
+        font-family:cursive;
+        font-size: 70px;
+        margin-top: 15%;
+        text-align: center;
+    }
+    #p2{
+        animation: colorChange 10s infinite;
+    }
+
+    @keyframes colorChange {
+        0% {
+            opacity: 1;
+            color:whitesmoke;
+        }
+        25% {
+          opacity: 1;
+          color: hsla(273, 67%, 55%, 0.773);
+        }
+        50% {
+            opacity: 1;
+            color: whitesmoke;
+        }
+        75%{
+          opacity: 1;
+          color: #0703d7;
+        }
+        100% {
+            opacity: 1;
+            color: rgb(43, 9, 106);
+    }
+    }
+    @keyframes colorChange {
+        0% {
+            opacity: 1;
+            color:whitesmoke;text-shadow:5px 5px 10px rgb(255, 255, 255);
+        }
+        25% {
+          opacity: 1;
+          color: hsla(273, 67%, 55%, 0.773);text-shadow:5px 5px 10px red;
+        }
+        50% {
+            opacity: 1;
+            color: whitesmoke;text-shadow:5px 5px 10px;
+        }
+        75%{
+          opacity: 1;
+          color: #0703d7;text-shadow:5px 5px 10px rgba(0, 204, 255, 0.831);
+        }
+        100% {
+            opacity: 1;
+            color: rgb(43, 9, 106);text-shadow:5px 5px 10px rgb(246, 2, 217) ;
+    }
+    }
+ .rezerve {
+    width: 70%;
+    height: 50px;
+    background-color: aliceblue;
+    margin: 70px;
+    padding: 2% 5% 0% 5%;
+    position: relative;
+    overflow: hidden;
+}
+.rezerve a {
+    color: rgb(131 131 132);
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+.rezerve p{
+    font-family: iran;
+    text-align: center;
+ }
+ .rezerve .border-top {
+    position: absolute;
+    top:0px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #171618,#282406,#766709, #e0b03e,#d9950c, #a33f08, #b01414 );
+    animation: animate-border-top 2s linear infinite;
+  }
+  @keyframes animate-border-top {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .rezerve .border-right {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #171618,#282406,#766709, #e0b03e,#d9950c, #a33f08, #b01414 );
+    animation: animate-border-right 2s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate-border-right {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  .rezerve .border-bottom {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, #171618,#282406,#766709, #e0b03e,#d9950c, #a33f08, #b01414 );
+    animation: animate-border-bottom 2s linear infinite;
+  }
+  @keyframes animate-border-bottom {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .rezerve .border-left {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top,  #171618,#282406,#766709, #e0b03e,#d9950c, #a33f08, #b01414 );
+    animation: animate-border-left 2s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate-border-left {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
